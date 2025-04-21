@@ -12,32 +12,14 @@
             color: #ffffff; /* Texto branco */
         }
 
-        .header {
-            width: 100%;
-            height: auto; /* Altura automática para ajustar ao conteúdo */
-            background-color: #333; /* Fundo escuro para o retângulo */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
-        }
-
-        .header img {
-            width: 100%;
-            height: auto; /* Ajusta a altura proporcionalmente à largura */
-            max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
-            object-fit: contain; /* Garante que a imagem apareça inteira */
-        }
-
         .content {
-            padding: 50px; /* Reduzido para aproximar o texto da imagem */
+            padding: 20px; /* Reduzi o padding para aproximar o texto da imagem */
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <!-- Substitua o caminho da imagem abaixo -->
-        <img src="Sem Título-1.jpg" alt="Imagem do topo">
+    <div>
+        <img src="Sem Título-1.jpg" alt="Imagem do topo" style="width: 100%; height: auto; object-fit: contain;">
     </div>
     <div class="content">
         <h1>Oi, é o Luka, seu "momo"!</h1>
