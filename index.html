@@ -14,14 +14,19 @@
 
         .header {
             width: 100%;
-            height: 200px;
+            height: auto; /* Altura automática para ajustar ao conteúdo */
             background-color: #333; /* Fundo escuro para o retângulo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; /* Garante que a imagem não ultrapasse os limites */
         }
 
         .header img {
             width: 100%;
             height: auto; /* Ajusta a altura proporcionalmente à largura */
-            object-fit: contain; /* Mantém o conteúdo visualmente agradável */
+            max-height: 100%; /* Garante que a imagem não ultrapasse a altura do container */
+            object-fit: contain; /* Garante que a imagem apareça inteira */
         }
 
         .content {
